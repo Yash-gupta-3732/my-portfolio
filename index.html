@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="name font-poppins">@YASH'S <span class="orange">PORTFOLIO </span></div>
+        <div class="nav">
+            <ul class="list-style font-poppins">
+                <li>Home</li>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Education</li>
+                <li>Work</li>
+                <li>Experiance</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <hr class="line">
+    <main>
+        <div class="container">
+            <div class="left">
+                <h1 class="font-poppins">Hi There <br>
+                    I'm YASH <span class="orange">GUPTA</span></h1>
+                <p class="para font-poppins">I Am Into <span class="brown font-poppins element"></span></p>
+                <div class="btn"><button class="About-me">About Me <img class="down-arrow"
+                            src="arrow-down-circle-fill.svg" alt=""></button></div>
+                <div class="social-media-section">
+                    <div class="linkedin disk"><i class='fab fa-linkedin sea-green'></i></div>
+                    <div class="github disk"><i class='fab fa-github sea-green'></i></div>
+                    <div class="twitter disk"><i class='fab fa-twitter sea-green'></i></div>
+                    <div class="telegram disk"><i class='fab fa-telegram sea-green'></i></div>
+                    <div class="instagram disk"><i class='fab fa-instagram sea-green'></i></div>
+                    <div class="dev disk"><i class='fab fa-dev sea-green'></i></div>
+                </div>
+                <div class="footer">
+                    <img src="avatar.webp" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="avatar"><img class="avatar" src="avatar.webp" alt=""></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+            strings: ["Web Developer", "Web designer!."],
+            typeSpeed: 30
+        });
+        let left = document.getElementsByClassName(".left");
+        left.innerHTML = typed;
+    </script>
+</body>
+
+</html>
